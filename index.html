@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif;}
+
+    body, html {
+  height: 100%;
+  color: dark#595959;
+  line-height: 1.8;
+}
+
+h1{color: #749DAD}
+h3{color: #749DAD}
+    
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: radial-gradient(rgba(242,242,242,0.9),rgba(242,242,242,0.9)), url(images/line.gif);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;    
+}
+    
+    .bgimg-2 {
+  background-image: linear-gradient(rgba(248,246,246,0.95),rgba(248,246,246,0.95));    
+  max-width: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!----------------------------------- Navbar  ------------------------------>
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+      
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+     
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"> ABOUT ADERIO</a>
+      <a href="#services" class="w3-bar-item w3-button w3-hide-small"> SERVICES</a>
+    <a href="#team" class="w3-bar-item w3-button w3-hide-small">TEAM</a>
+    <a href="#news" class="w3-bar-item w3-button w3-hide-small">NEWS</a>
+       <a href="#insight" class="w3-bar-item w3-button w3-hide-small">INSIGHT</a>
+       <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#team" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#team" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#team" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#team" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      
+      
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!----------------------------------- Background picture  ------------------------------>
+    
+<div class="w3-container bgimg-1 w3-display-container w3-padding">
+    <div class="w3-display-left w3-margin-left" style="white-space:nowrap;">
+    <br><br><br><br><br><br>
+    <span class="w3-center w3-xlarge w3-wide w3-animate-opacity">Aderio is a firm with <br>experienced specialists.<br> <br>Clients ask for our opinion, <br>not our advice </span>
+     <br>
+    </div>
+</div>
+    
+    
+    
+<!----------------------------------- About  ------------------------------>
+
+    <div class="w3-row w3-center w3-padding-16" id=about style= background-color:#749DAD>
+    <span class="w3-xxlarge w3-text-white w3-wide">About Aderio</span>
+</div>
+
+<div class="w3-content  w3-container w3-padding-64">
+    <div class="w3-padding w3-display-container" style= height: 100%;>
+    <h3>BACKGROUND</h3>
+    <hr style="width:100px;border:2px solid #749DAD; background-color: #749DAD">
+    <p>Aderio was founded in 2018 and is a firm specialized in valuation, financial analysis and quantum in disputes. </p>
+       <p> We provide indepent opinions and reviews. Our team has extensive experience from international audit and consulting firms and are frequently engaged as independent expert witnesses. </p>
+    </div>
+    <h3 class=w3-padding>OUR VALUE PROPOSITION</h3>
+    <div class="w3-content  w3-container", style=color: #F5F4EF;>
+    <hr style="width:100px;border:2px solid #749DAD; background-color: #749DAD">
+    <div class="w3-quarter w3-color-grey">
+    <p style= color:#749DAD><b>Experience and <br>engagement</b></p>
+    </div>    
+    <div class="w3-rest">
+    <p>Our engagement are always managed by persons with extensive experience. Our customers always have direct access to senior employees throughout the engagement.</p></div>
+    <div class="w3-quarter w3-color-grey">
+    <p style= color:#749DAD><b>Independence and <br> integrity</b></p>
+    </div>    
+    <div class="w3-rest">
+    <p>As experts in disputes, we rely on our independence and objectivity. Our work is based on facts and analyses.</p>
+    </div>
+    <div class="w3-quarter w3-color-grey">
+    <p style= color:#749DAD><b>Quality and <br>experience</b></p>
+    </div>    
+    <div class="w3-rest">
+    <p>We focus on what we do best. We engage in complex issues that require qualified analysis and the ability to turn facts into insight.</p>
+     </div>
+    </div>      
+</div>    
+<!----------------------------------- Our Services  ------------------------------>    
+ <hr id="services">
+    <br>
+    <div class="w3-row w3-center w3-padding-16" style= background-color:#749DAD>
+    <span class="w3-xxlarge w3-text-white w3-wide">Our services</span>
+</div>   
+ <div class="w3-content w3-container w3-padding-64">     
+<div class="w3-padding w3-display-container" style= height: 100%;>  
+    <h3>ENGAGEMENTS AND CLIENTS</h3>
+    <hr style="width:100px;border:2px solid #749DAD; background-color: #749DAD">
+      <p>We engage in projects with a high level of complexity that requires experience and senior involvement.</p>
+      <p>Our clients include multinational corporations, private equity firms, gouvernments and municipalities as well as small entrepreneurial firms and start-up companies. </p>
+          <p>We are engaged as experts in disputes and work with all the major law firms in Sweden</p>
+      <br>
+    <p></p>
+     </div>   
+   <div class="w3-padding w3-display-container" style= height: 100%;>  
+          <h3>SERVICES</h3>
+       <hr style="width:100px;border:2px solid #749DAD; background-color: #749DAD">
+       </div>
+    <div class="w3-col l4 w3-border w3-border-white w3-container">
+      <h3 style=color:#D1AB55>Independent valuation</h3>
+      <p>We carry out valuations of companies, intangible assets and financial instruments for e.g. accounting, transaction and tax purposes. We assist in financial modelling.</p>
+        <br>
+        <br>
+    </div>
+
+    <div class="w3-col l4 w3-border w3-border-white w3-container">
+      <h3 style=color:#D1AB55>Quantum</h3>
+      <p>We give opinions in arbitration and proceedings in ordinary courts. The assignments concern, among other things, lost value, lost profit and compulsory redemption of shares.</p>
+    </div>
+
+    <div class="w3-col l4 w3-border w3-border-white w3-container">
+      <h3 style=color:#D1AB55>Financial analysis</h3>
+      <p>We assist clients in issues relating to shareholder value, financial analalys, incentive programs, restructuring, financial modelling and investment and business case evaluation</p>
+    </div>
+
+  
+
+        <button class="w3-button w3-block" style= color:#749DAD href="CV.html">Detailed example engagements</button>
+  
+</div>
+
+ <!----------------------------------- Team  ------------------------------>
+    <hr class="w3-opacity" id="team">
+    <br>
+<div class="w3-row w3-center w3-padding-16"  style= background-color:#749DAD>
+    <span class="w3-xxlarge w3-text-white w3-wide">Our team</span>
+</div>   
+    
+<div class="w3-content w3-container">  
+    <div class="w3-padding w3-justify w3-text-grey w3-padding-32" id="people">
+        <h2>Our team</h2>
+        <hr class="w3-opacity">
+      
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                <img src="images/DFL2.png" alt="Magnus" style="width:100%">
+                    <div class="w3-container">
+                    <h3>Daniel Frigell</h3>
+                    <p class="w3-opacity">Partner och Grundare</p>
+                    <p>Daniel är delägare och grundade Aderio under 2018.</p>
+                    <p>Daniel har fokus på värdering och tvist, samt anlitas ofta som ekonomisk sakkunnig.</p>
+                    <p>Han har över 20 års erfarenhet från större revisionsbyråer.</p> 
+                    <p>Daniel har en magisterexamen från Handelshögskolan i Stockholm.</p>
+                        <div class="w3-container">
+                            <a href="CV.html" class="w3-button w3-block w3-text-white" style= background-color:#2a6592>CV</a>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>mail@aderio.se</p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46 (0) ## ### ##</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                    <img src="images/DFL2.png" alt="Magnus" style="width:100%">
+                        <div class="w3-container">
+                        <h3>Daniel Frigell</h3>
+                        <p class="w3-opacity">Partner och Grundare</p>
+                        <p>Daniel är delägare och grundade Aderio under 2018.</p>
+                        <p>Daniel har fokus på värdering och tvist, samt anlitas ofta som ekonomisk sakkunnig.</p>
+                        <p>Han har över 20 års erfarenhet från större revisionsbyråer.</p> 
+                        <p>Daniel har en magisterexamen från Handelshögskolan i Stockholm.</p>
+                            <div class="w3-container">
+                             <a href="CV.html" class="w3-button w3-block w3-text-white" style= background-color:#2a6592>CV</a>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>mail@aderio.se</p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+46 (0) ## ### ##</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+        </div> 
+    </div> 
+</div>
+
+<!----------------------------------- Awards  ------------------------------>
+    <hr class="w3-opacity" id="awards">
+    <br>
+    <div class="w3-row w3-center w3-padding-16" id="awards"  style= background-color:#749DAD>
+    <span class="w3-xxlarge w3-text-white w3-wide">Awards</span>
+    </div>  
+    <div class="w3-padding-32 w3-content w3-text-grey" id="awards" style="margin-bottom:64px">
+    
+    <div class="w3-row">
+        <div class="w3-third w3-container">
+        <p style=color:#D1AB55;>Arbitration, Expert Witness (2021)</h3>
+        </div>
+        <div class="w3-third w3-container">
+        <p style=color:#D1AB55;>Quantum of Damages (2020)</p>
+        </div>
+        <div class="w3-third w3-container">
+        <img src="images/wwl.png" alt="Magnus" style="width:80%">
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-third w3-container">
+        <p>Daniel Frigell: “WWL Ranking: Recommended”</p>
+        <p>“Daniel always provides top-quality work” and “He is a terrific financial expert”.</p>
+        <br>
+        <p>Magnus Källander: “WWL Ranking: Recommended”</p>
+        </div>
+        <div class="w3-third w3-container">
+        <p>“Daniel Frigell comes highly recommended by peers and clients alike for his strong experience and deep knowledge of dispute-related valuations in arbitrations.”</p>
+        </div>
+    </div>
+</div>
+  
+<!----------------------------------- Background picture  ------------------------------>
+    
+  <hr class="w3-opacity" id="awards">
+    <br>
+    <div class="w3-row w3-center w3-padding-16" style= background-color:#749DAD>
+        <span class="w3-xxlarge w3-text-white w3-wide">Contact</span> </div>
+        
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Kungsgatan [...], Stockholm<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +46 ### ###<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: aderio@aderio.se<br>
+      </div>
+      
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
